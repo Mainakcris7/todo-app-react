@@ -1,0 +1,98 @@
+div.outer{
+    display: flex;
+    height: 75vh;
+    flex-direction: column;
+    width: 350px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: beige;
+    color: black;
+}
+
+h2{
+    margin: 0;
+    color: black;
+}
+div.addBox{
+    margin-top: 1rem;
+    display: flex;
+    gap: 5px;
+    /* outline: 1px solid red; */
+}
+input{
+    padding: .3rem .5rem;
+    color: black;
+    width: 100%;
+    font-weight: bold;
+    border: none;
+    outline: 2px solid rgb(93, 0, 253);
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(250, 235, 215, 0.63);
+}
+input:focus-visible{
+    outline: 3px solid rgb(93, 0, 253);
+}
+button.add{
+    margin-left: 1px;
+    outline: none !important;
+    background-color: rgb(197, 247, 197);
+    color: rgb(0, 169, 6);
+    border: 2px solid rgb(0, 169, 6);
+    transition: background-color 0.2s ease-out;
+}
+button.add:hover{
+    background-color: rgb(0, 169, 6);
+    border: 2px solid rgb(0, 169, 6);
+    color: white;
+}
+div.items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    flex: 1;
+    overflow-y: auto;
+}
+div.item p{
+    margin: 0;
+    font-weight: bold;
+}
+div.item{
+    padding: 0.5rem;
+    margin-bottom: 5px;
+    align-items: center;
+    display: flex;
+    background-color: rgb(245, 226, 199);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+div.item button.remove{
+    padding: 0.6rem;
+    background-color: rgb(249, 233, 233);
+    color: rgb(249, 19, 19);
+    outline: none !important;
+    border: 1px solid rgb(249, 19, 19);
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease-out;
+}
+div.item button.remove:hover{
+    background-color: rgb(249, 19, 19);
+    color: white;
+}
+div.removeAll{
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+button.remove-all{
+    padding: 0.6rem;
+    background-color: rgb(249, 19, 19);
+    outline: none !important;
+    border: 1px solid rgb(249, 19, 19);
+    font-size: 0.85rem;
+    transition: background-color 0.2s ease-out;
+}
+button.remove-all:hover{
+    border: 1px solid rgb(249, 19, 19);
+    background-color: rgb(192, 2, 2);
+}
